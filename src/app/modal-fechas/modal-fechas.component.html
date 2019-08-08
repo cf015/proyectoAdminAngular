@@ -1,0 +1,35 @@
+<div class="modal-header">
+  <h5 class="modal-title">Crear match.</h5>
+  <button type="button" class="close" (click)="clickSalir();"data-dismiss="modal" >
+  <span aria-hidden="false">&times;</span></button>
+</div>
+    
+  <div class="form-group">  
+    <mat-form-field>
+      <mat-label>Seleccione equipo local.</mat-label>
+      <mat-select [(ngModel)]="match.teamLocal">
+        <mat-option >None</mat-option>
+        <mat-option *ngFor = "let team of teams" value="{{team.id}}">{{team.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <input type="date" [(ngModel)]="match.dateMatch" class="form-control" id="fecha" placeholder=" Fecha y Hora ">
+  </div>
+
+  <div class="form-group">  
+    <mat-form-field>
+      <mat-label>Seleccione equipo visitante.</mat-label>
+      <mat-select [(ngModel)]="match.teamVisitor">
+        <mat-option >None</mat-option>
+        <mat-option *ngFor = "let team of teams" value="{{team.id}}">{{team.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" (click)="crearMatch();" class="btn btn-warning">Guardar</button>
+  </div>
+   
+    

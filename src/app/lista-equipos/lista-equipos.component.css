@@ -1,0 +1,24 @@
+.container{
+  width: 80%;
+  margin-top: 1%;
+  margin-left: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.green-icon {
+  color: green;
+}
+
+.tbody{
+  margin-top: 10%;
+  margin-bottom: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mi-modal{
+  width: 80%;
+  padding-left: 82%;
+  padding-top: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+

@@ -1,0 +1,78 @@
+.mat-tab-group {
+    margin-bottom: 48%;
+    position: sticky  !important;
+    top:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mat-tab{
+    position: sticky !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 80%;
+    margin-left: 10%;
+    box-shadow: 3px 0 6px rgba(0,0,0,.24);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mat-card-title{
+    width: 80%;
+    margin-left: 9%;
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mat-icon {
+ 
+    margin-left: 0.5%;
+    text-decoration: none;
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+
+
+.card{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+    color: #000;
+    vertical-align: bottom;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 1%;
+    
+}
+
+.card-header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-body{
+    text-align: center;
+    padding-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-text{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button{
+    left: 20%;;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mi-modal{
+    width: 80%;
+    padding-left: 82%;
+    padding-top: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mi-button{
+    padding-top: 5%;
+}

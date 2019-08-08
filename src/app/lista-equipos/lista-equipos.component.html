@@ -1,0 +1,31 @@
+<div class="mi-modal">
+    <button type="button" class="btn btn-primary" (click)="abrirModalCreate();">Nuevo</button>
+</div>
+
+<div class="container">
+  <div class="card text-center">
+    <h5 class="card-header">Lista de Equipos</h5>
+     <p>Te quedan {{numTeams}} equipos para registrar</p>>
+    <div class="table-responsive-sm">
+  <table class="table table-hover" *ngFor="let team of teams">
+    <thead>
+      <tr>
+        <th scope="col">IdEquipo</th>
+        <th scope="col">Nombre equipo</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>{{team.id}}</th>
+        <td>{{team.name}}</td>
+        <span>
+        <td><mat-icon class="green-icon" (click)="abrirModal(team);">loop</mat-icon></td>
+        <td><mat-icon color="warn" (click)="abrirModalEliminar(team);">delete</mat-icon></td>
+      </span>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+</div>
+</div>

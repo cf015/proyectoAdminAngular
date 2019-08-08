@@ -1,0 +1,79 @@
+
+<mat-tab-group mat-align-tabs="center">
+    
+    <mat-tab label="Fechas">
+            <div class="mi-modal">
+                    <button type="button" class="btn btn-primary" (click)="abrirModalF();">Nuevo</button>
+            </div>
+        <div class="card text-center">
+                <h5 class="card-header">Campeonato - Ecuavoley</h5>
+            
+            <div class="row" *ngFor="let match of matches2">
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Local</h4>
+                        <h5 class="card-text">{{match.teamLocal}}</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <br>
+                        <h4 class="card-text">VS</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Visitante</h4>
+                        <h5 class="card-text">{{match.teamVisitor}}</h5>
+                    </div>
+                </div> 
+                <div class="col-sm-12">
+                        <h4>Fecha partido</h4>
+                        <p>{{match.dateMatch}}</p>
+                        <h4>Estado match</h4>
+                        <p [ngClass] = "{
+                            'text-primary': match.state_id === 1,
+                            'text-success': match.state_id === 2
+                        }"> {{match.stateMatch}} </p>
+                        <span class="mi-button">
+                                <button type="button" class="btn btn-danger "(click)="abrirModalS(match);">Eliminar</button>
+                        </span>
+                </div>
+            </div>
+
+        </div>
+    </mat-tab>
+    <mat-tab label="Resultados">
+            <div class="mi-modal">
+            </div>
+        <div class="card">
+            <h5 class="card-header">Jornadas</h5>
+            <div class="row" *ngFor="let match of matches2">
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <p class="card-title">Local</p>
+                        <h4 class="card-text">{{match.teamLocal}}</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <p class="card-title">Resultado</p>
+                        <h4 class="card-text">{{match.scoreLocal}} - {{match.scoreVisitor}}</h4>
+                        <div class="mi-button">
+                                <button type="button" class="btn btn-success" (click)="abrirModal(match);">Actualizar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <p class="card-title">Visitante</p>
+                        <h4 class="card-text">{{match.teamVisitor}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+</mat-tab-group>
+
+
+
